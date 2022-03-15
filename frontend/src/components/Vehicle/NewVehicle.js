@@ -10,10 +10,8 @@ const NewVehicle = () => {
     })
 
     const OnInputChange = e => {
-        const changedReason = e.target.getAttribute('name');
-        setVehicle({ ...Vehicle, [changedReason]: e.target.value });
-
-
+        const attribute = e.target.getAttribute('name');
+        setVehicle({ ...Vehicle, [attribute]: e.target.value });
     }
     const addVehicle = async (e) => {
         console.log(Vehicle)
@@ -56,7 +54,7 @@ const NewVehicle = () => {
                 </Form.Group>
 
                 <Form.Group className="mb-3">
-                    <Link to="/" className='btn btn-primary m-1' >
+                    <Link to="/Vehicles" className='btn btn-primary m-1' >
                         Volver
                     </Link>
                     <Button variant="primary" type="submit">

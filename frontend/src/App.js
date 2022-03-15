@@ -5,26 +5,27 @@ import "react-datepicker/dist/react-datepicker.css";
 
 // import Drivers from './components/Drivers';
 import NewDriver from './components/NewDriver';
-import NewVehicle from './components/NewVehicle';
+import NewVehicle from './components/Vehicle/NewVehicle';
 import Home from './components/Home';
+import Vehicles from './components/Vehicle/Vehicles';
+import EditVehicle from './components/Vehicle/EditVehicle';
 
 
 function App() {
   return (
-
-
-     
-         <Router>
-          <Container className='p-5'>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/NewDriver" element={<NewDriver />} />
-            <Route exact path="/NewVehicle" element={<NewVehicle />} />
-          </Routes>
-          </Container>
+    <Router>
+      <Container className='p-5'>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Vehicles" element={<Vehicles />} />
+          <Route exact path="/NewVehicle" element={<NewVehicle />} />
+          <Route exact path="/EditVehicle/:IdVehicle" element={<EditVehicle />} />
+          <Route exact path="/NewDriver" element={<NewDriver />} />
+        </Routes>
+      </Container>
     </Router>
-      
-     
+
+
   );
 }
 

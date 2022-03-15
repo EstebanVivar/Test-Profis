@@ -15,9 +15,9 @@ const Home = () => {
             <Link to="/newDriver" className='btn btn-primary m-5' >
                 Agregar Piloto
             </Link>
-
-            <Link to="/newVehicle" className='btn btn-success m-5' >
-                Agregar Vehiculo
+            
+            <Link to="/Vehicles" className='btn btn-success m-5' >
+                Ver Vehiculos
             </Link>
         </Fragment>
     );
